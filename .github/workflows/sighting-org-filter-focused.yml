@@ -31,5 +31,5 @@ jobs:
           php -l app/Test/SightingOrgIdTestFixture.php
           php -l app/Test/SightingRestSearchOrgIdTest.php
           mkdir -p app/Vendor
-          printf '<?php\\n' > app/Vendor/autoload.php
+          echo '<?php' > app/Vendor/autoload.php
           phpunit --no-coverage --colors=never app/Test/SightingRestSearchOrgIdTest.php
